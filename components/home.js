@@ -210,7 +210,8 @@ export default function Home({navigation}) {
                                             <Text style={styles.modalDescription}>{toShow.date}</Text>
                                             <Text style={styles.modalSubHeader}>Time</Text>
                                             <Text style={styles.modalDescription}>{toShow.time}</Text>
-
+                                            <Text style={styles.modalSubHeader}>Content</Text>
+                                            <Text style={styles.modalDescription}>{toShow.content}</Text>
                                             <Text style={styles.modalSubHeader}>Email</Text>
                                             <Text style={styles.modalDescription}>{userToShow.email}</Text>
                                             <Text style={styles.modalSubHeader}>Phone</Text>
@@ -218,9 +219,17 @@ export default function Home({navigation}) {
 
                                         </View>
                                         <View 
-                                            flexDirection='row'
                                             alignItems='center'
-                                            justifyContent='center'>
+                                            justifyContent='center'
+                                            paddingTop={20}>
+                                            <TouchableOpacity
+                                                onPress={() => {}
+                                                }
+                                                style={styles.button}>
+                                                    <View>
+                                                        <Text style={styles.cancelText}>Remind Patient</Text>
+                                                    </View>
+                                            </TouchableOpacity>
                                             <TouchableOpacity
                                                 onPress={() => {
                                                     cancelAppointment(toShow._id);
@@ -331,7 +340,7 @@ const styles = StyleSheet.create({
     },
     appointmentsModal: {
         marginLeft: Dimensions.get('screen').width * 0.075,
-        height: Dimensions.get('screen').height * 0.75,
+        height: Dimensions.get('screen').height * 0.6,
         width: Dimensions.get('screen').width * 0.85,
     },
     modalTitle: {

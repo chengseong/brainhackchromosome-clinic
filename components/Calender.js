@@ -45,7 +45,7 @@ export default class AgendaScreen extends Component {
           <Ionicons
             name="notifications-outline"
             size={24}
-            color='#0009FF' />
+            color='#4cd964' />
         </View>
       </View>
       
@@ -57,7 +57,7 @@ export default class AgendaScreen extends Component {
             renderItem={this.renderItem.bind(this)}
             renderEmptyDate={this.renderEmptyDate.bind(this)}
             rowHasChanged={this.rowHasChanged.bind(this)}
-            theme={{agendaTodayColor: '#5464F8', agendaDayTextColor:'#5464F8', dotColor: 'salmon',selectedDayBackgroundColor:'#5464F8',todayTextColor:'#5464F8'}}
+            theme={{agendaTodayColor: '#4cd964', agendaDayTextColor:'#4cd964', dotColor: 'salmon',selectedDayBackgroundColor:'#4cd964',todayTextColor:'#4cd964'}}
         />
     </View>
   
